@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+
 namespace UniversityProject
 {
 	class HTTPError : IComparable
@@ -21,6 +22,7 @@ namespace UniversityProject
 			description = words [1];
 			dateTime = DateTime.Parse(words [2] + " " + words [3] + " " + words [4]);
 			//dateTime = DateTime.Parse (words [2], System.Globalization.CultureInfo.InvariantCulture);
+
 		}
 		public void print()
 		{
@@ -30,23 +32,34 @@ namespace UniversityProject
 		{
 			sw.WriteLine (code.ToString () + "-" + description + " " + dateTime.ToString ());
 		}
+		public string ToString()
+		{
+			return description + " " + dateTime.ToString ();
+		}
 		public int code { get; set; }
+
 		public String description { get; set; }
+
 		public DateTime dateTime { get; set; }
+
 		public int CompareTo(object obj)
 		{
 			var item = obj as HTTPError;
 			return code.CompareTo(item.code);
 		}
+
 		public override bool Equals(object obj)
 		{
 			var item = obj as HTTPError;
+
 			if (item == null)
 			{
 				return false;
 			}
+
 			return this.code.Equals(item.code);
 		}
+
 		public override int GetHashCode()
 		{
 			return this.code.GetHashCode();
