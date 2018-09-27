@@ -32,6 +32,10 @@ namespace UniversityProject
 		{
 			sw.WriteLine (code.ToString () + "-" + description + " " + dateTime.ToString ());
 		}
+		public string ToString()
+		{
+			return description + " " + dateTime.ToString ();
+		}
 		public int code { get; set; }
 
 		public String description { get; set; }
