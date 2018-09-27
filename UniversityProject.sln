@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityProject", "UniversityProject\UniversityProject.csproj", "{73522766-FD09-400B-A1C9-7058108621CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTPError", "HTTPError\HTTPError.csproj", "{F68B3CA7-166F-431D-AB9C-32AA06D9A29B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{73522766-FD09-400B-A1C9-7058108621CD}.Debug|x86.Build.0 = Debug|x86
 		{73522766-FD09-400B-A1C9-7058108621CD}.Release|x86.ActiveCfg = Release|x86
 		{73522766-FD09-400B-A1C9-7058108621CD}.Release|x86.Build.0 = Release|x86
+		{F68B3CA7-166F-431D-AB9C-32AA06D9A29B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F68B3CA7-166F-431D-AB9C-32AA06D9A29B}.Debug|x86.Build.0 = Debug|Any CPU
+		{F68B3CA7-166F-431D-AB9C-32AA06D9A29B}.Release|x86.ActiveCfg = Release|Any CPU
+		{F68B3CA7-166F-431D-AB9C-32AA06D9A29B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
