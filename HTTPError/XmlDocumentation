@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HTTPError</name>
+    </assembly>
+    <members>
+        <member name="M:UniversityProject.HTTPError.#ctor">
+            <summary>
+            Empty constructor
+            </summary></member>
+        <member name="M:UniversityProject.HTTPError.#ctor(System.String)">
+            <summary>
+            Not empty constructor
+            </summary></member>
+        <member name="M:UniversityProject.HTTPError.print">
+            <summary>
+            prints error
+            </summary></member>
+        <member name="M:UniversityProject.HTTPError.printToFile(System.IO.StreamWriter)">
+            <summary>
+            prints error to file
+            </summary></member>
+        <member name="M:UniversityProject.HTTPError.ToString">
+            <summary>
+            to string
+            </summary></member>
+        <member name="P:UniversityProject.HTTPError.code">
+            <summary>
+            property code
+            </summary></member>
+        <member name="P:UniversityProject.HTTPError.description">
+            <summary>
+            property description
+            </summary></member>
+        <member name="P:UniversityProject.HTTPError.dateTime">
+            <summary>
+            property dateTime
+            </summary></member>
+        <member name="M:UniversityProject.HTTPError.CompareTo(System.Object)">
+            <summary>
+            method compareto
+            </summary></member>
+        <member name="M:UniversityProject.HTTPError.Equals(System.Object)">
+            <summary>
+            method equals
+            </summary></member>
+        <member name="M:UniversityProject.HTTPError.GetHashCode">
+            <summary>
+            method getHashCode
+            </summary></member>
+    </members>
+</doc>
