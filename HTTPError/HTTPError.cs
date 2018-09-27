@@ -11,13 +11,13 @@ namespace UniversityProject
 	{
 
 		/// <summary>
-		/// 
+		/// Empty constructor
 		/// </summary>
 		public HTTPError()
 		{
 		}
 		/// <summary>
-		/// 
+		/// Not empty constructor
 		/// </summary>
 		public HTTPError(string s)
 		{
@@ -32,40 +32,40 @@ namespace UniversityProject
 
 		}
 		/// <summary>
-		///
+		/// prints error
 		/// </summary>
 		public void print()
 		{
 			Console.WriteLine (code.ToString () + "-" + description + " " + dateTime.ToString ());
 		}
 		/// <summary>
-		/// zhuk debil
+		/// prints error to file
 		/// </summary>
 		public void printToFile(StreamWriter sw)
 		{
 			sw.WriteLine (code.ToString () + "-" + description + " " + dateTime.ToString ());
 		}
 		/// <summary>
-		/// zhuk chmo
+		/// to string
 		/// </summary>
-		public string ToString()
+		public override string ToString()
 		{
 			return description + " " + dateTime.ToString ();
 		}
 		/// <summary>
-		/// zhuk olen
+		/// property code
 		/// </summary>
 		public int code { get; set; }
 		/// <summary>
-		/// zhuk tylen
+		/// property description
 		/// </summary>
 		public String description { get; set; }
 		/// <summary>
-		/// 
+		/// property dateTime
 		/// </summary>
 		public DateTime dateTime { get; set; }
 		/// <summary>
-		/// or
+		/// method compareto
 		/// </summary>
 		public int CompareTo(object obj)
 		{
@@ -73,7 +73,7 @@ namespace UniversityProject
 			return code.CompareTo(item.code);
 		}
 		/// <summary>
-		/// qwerty
+		/// method equals
 		/// </summary>
 		public override bool Equals(object obj)
 		{
@@ -87,7 +87,7 @@ namespace UniversityProject
 			return this.code.Equals(item.code);
 		}
 		/// <summary>
-		/// 
+		/// method getHashCode
 		/// </summary>
 		public override int GetHashCode()
 		{
