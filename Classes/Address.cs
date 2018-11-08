@@ -4,7 +4,7 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 
-namespace Task3.Classes.OrderData
+namespace Task3.Classes.АppointmentData
 {
     /// <summary>
     /// Class to represent an address.
