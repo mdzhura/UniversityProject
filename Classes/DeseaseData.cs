@@ -17,7 +17,11 @@ namespace Task3.Classes.АppointmentData
         /// </summary>
         [XmlAttribute]
         public uint Code { get; set; }
-
+        /// <summary>
+        /// A name of Desease.
+        /// </summary>
+        [XmlAttribute]
+        public string Name { get; set; }
         /// <summary>
         /// Recipe of Desease.
         /// </summary>
@@ -35,11 +39,13 @@ namespace Task3.Classes.АppointmentData
         /// Constructor to set data from multiple parameters.
         /// </summary>
         /// <param name="code">A code of Desease.</param>
-        /// <param name="Recipe">Recipe of Desease.</param>
-        public DeseaseData(uint code, string recipe)
+        /// <param name="name">A name of Desease.</param>
+        /// <param name="recipe">Recipe of Desease.</param>
+        public DeseaseData(uint code, string name,  string recipe)
         {
             Code = code;
             Recipe = recipe;
+            Name = name;
         }
 
         /// <summary>
@@ -59,6 +65,7 @@ namespace Task3.Classes.АppointmentData
 
             Code = code;
 
+            Name = source["Name"].Value;
 
             Recipe = source["Recipe"].Value;
         }
@@ -71,6 +78,7 @@ namespace Task3.Classes.АppointmentData
             return new XElement(
                 "DeseaseData",
                 new XAttribute("Code", Code),
+                new XAttribute("Name", Name) ,
                 new XAttribute("Recipe", Recipe));
         }
     }
