@@ -36,16 +36,19 @@ namespace Task3.Classes.AppointmentData
         [XmlAttribute]
         public string PhoneNumber { get; set; }
 
-        /// <summary>
-        /// patient's address.
-        /// </summary>
-        public Address Address { get; set; }
+        
         /// <summary>
         /// <summary>
         /// patient's diagnosis.
         /// </summary>
+        [XmlAttribute]
         public string Diagnosis { get; set; }
+
+        /// <summary>
+        /// patient's address.
+        /// </summary>
         
+        public Address Address { get; set; }
 
         /// <summary>
         /// Default constructor is used for xml serialization/deserialization. 

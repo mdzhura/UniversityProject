@@ -63,6 +63,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BL\Util.cs" />
+    <Compile Include="BL\Validator.cs" />
     <Compile Include="Classes\Address.cs" />
     <Compile Include="Classes\Appointment.cs" />
     <Compile Include="Classes\AppointmentsStorage.cs" />

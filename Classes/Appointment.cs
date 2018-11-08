@@ -24,12 +24,14 @@ namespace Task3.Classes.AppointmentData
         /// <summary>
         /// Contains Patient personal information.
         /// </summary>
+        
         public PatientData PatientData { get; set; }
 
-       
+
         /// <summary>
         /// Holds an information about Appointmented Desease.
         /// </summary>
+        
         public DeseaseData DeseaseData { get; set; }
 
         /// <summary>

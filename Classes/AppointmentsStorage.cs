@@ -32,11 +32,13 @@ namespace Task3.Classes
         /// </summary>
         public void CreateIfNotExists()
         {
+
             if (StorageExists())
             {
+               // Console.WriteLine("here");
                 return;
             }
-
+            Console.WriteLine("here");
             Stream stream = new FileStream(_path, FileMode.Create);
             new XmlSerializer(typeof(List<Appointment>)).Serialize(stream, new List<Appointment>());
             stream.Close();
@@ -71,6 +73,7 @@ namespace Task3.Classes
         {
             var dict = new Dictionary<long, string>();
             var doc = new XmlDocument();
+
             doc.Load(_path);
             var iterator = doc.SelectNodes("/ArrayOfAppointment/Appointment")?.GetEnumerator();
             while (iterator != null && iterator.MoveNext())

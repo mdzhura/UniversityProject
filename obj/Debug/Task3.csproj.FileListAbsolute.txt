@@ -5,7 +5,6 @@ C:\Users\danylo99\source\repos\Task3\Task3\obj\Debug\Task3.csprojAssemblyReferen
 C:\Users\danylo99\source\repos\Task3\Task3\obj\Debug\MainWindow.g.cs
 C:\Users\danylo99\source\repos\Task3\Task3\obj\Debug\App.g.cs
 C:\Users\danylo99\source\repos\Task3\Task3\obj\Debug\Task3_MarkupCompile.cache
-C:\Users\danylo99\source\repos\Task3\Task3\obj\Debug\Task3_MarkupCompile.lref
 C:\Users\danylo99\source\repos\Task3\Task3\obj\Debug\MainWindow.baml
 C:\Users\danylo99\source\repos\Task3\Task3\obj\Debug\Task3.g.resources
 C:\Users\danylo99\source\repos\Task3\Task3\obj\Debug\Task3.Properties.Resources.resources
