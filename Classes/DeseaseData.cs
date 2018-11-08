@@ -3,6 +3,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using Task3.Classes.AppointmentData;
 
 namespace Task3.Classes.АppointmentData
 {

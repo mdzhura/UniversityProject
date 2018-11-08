@@ -45,12 +45,7 @@ namespace Task3.Classes.AppointmentData
         /// patient's diagnosis.
         /// </summary>
         public string Diagnosis { get; set; }
-        /// <summary>
-        /// patient's desease description
-        /// </summary>
-        public string DeseaseDescription { get; set; }
-
-
+        
 
         /// <summary>
         /// Default constructor is used for xml serialization/deserialization. 
@@ -74,8 +69,8 @@ namespace Task3.Classes.AppointmentData
             string email,
             string phoneNumber,
             Address patientAddress , 
-            string diagnosis,
-            string deseaseDescription)
+            string diagnosis
+            )
         {
             FirstName = firstName.Trim();
             LastName = lastName.Trim();
@@ -83,7 +78,7 @@ namespace Task3.Classes.AppointmentData
             PhoneNumber = phoneNumber.Trim();
             Address = patientAddress;
             Diagnosis = diagnosis.Trim();
-            DeseaseDescription = deseaseDescription.Trim();
+           
         }
 
         /// <summary>
@@ -106,7 +101,7 @@ namespace Task3.Classes.AppointmentData
             Email = source.Attributes["Email"].Value;
             PhoneNumber = source.Attributes["PhoneNumber"].Value;
             Diagnosis = source.Attributes["Diagnosis"].Value;
-            DeseaseDescription = source.Attributes["DeseaseDescription"].Value;
+            
             var addressNode = source.SelectSingleNode("Address");
             if (addressNode == null)
             {
@@ -128,7 +123,7 @@ namespace Task3.Classes.AppointmentData
                 new XAttribute("Email", Email),
                 new XAttribute("PhoneNumber", PhoneNumber),
                 new XAttribute("Diagnosis", Diagnosis),
-                new XAttribute("DeseaseDescription", DeseaseDescription) ,
+                
                 Address.ToXml());
         }
     }
