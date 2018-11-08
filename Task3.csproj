@@ -65,6 +65,7 @@
     </Compile>
     <Compile Include="Classes\Address.cs" />
     <Compile Include="Classes\Appointment.cs" />
+    <Compile Include="Classes\AppointmentsStorage.cs" />
     <Compile Include="Classes\DeseaseData.cs" />
     <Compile Include="Classes\PatientData.cs" />
     <Compile Include="MainWindow.xaml.cs">
