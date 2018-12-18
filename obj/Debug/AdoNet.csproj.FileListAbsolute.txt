@@ -1,0 +1,7 @@
+D:\University-master\AdoNet\bin\Debug\AdoNet.exe.config
+D:\University-master\AdoNet\bin\Debug\AdoNet.exe
+D:\University-master\AdoNet\bin\Debug\AdoNet.pdb
+D:\University-master\AdoNet\obj\Debug\AdoNet.csprojAssemblyReference.cache
+D:\University-master\AdoNet\obj\Debug\AdoNet.csproj.CoreCompileInputs.cache
+D:\University-master\AdoNet\obj\Debug\AdoNet.exe
+D:\University-master\AdoNet\obj\Debug\AdoNet.pdb
